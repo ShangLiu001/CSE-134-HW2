@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- link to css to be created -->
-    <link rel="stylesheet" href="styles.css" />
-    <style type="text/css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
       main {
         border-style: solid;
         position: relative;
@@ -19,15 +19,16 @@
   <body>
     <header>
       <!-- want to add a cool, very small logo/portrait here -->
+
       <div><picture>
-        <source media="(max-width:100px)" />
-        <img src="ucsdlogo.png"
+        <source media="(max-width:100px)" srcset="ucsdlogo.png">
+        <img src="ucsdlogo.png " 
         width="90"
-        height="45"
-      />
-      <figcaption>Go Tritons!<br/></figcaption>
+        height="48"
+        alt="UCSD logo">
       </picture>
       </div>
+      <aside>Go Tritons!<br></aside>
     </header>
 
     <main>
@@ -44,12 +45,12 @@
       <p>
         This is the project I am currently working on: (Not finished yet, I will simply put google.com here)
         <!-- My project window currently under construction, I-->
-        <iframe src="inside HW2 my proj.html" title="description"></iframe><br />
+        <iframe src="insideHW2myproj.html" title="description"></iframe><br>
         It's a
         <span class="to be labelled red"
           >Twitch stream recommendation system based on the content the user have favorated(add background image from
           google).</span>
-        <br />
+        <br>
         <span class="to be labelled red"
           >The project is still under development</span
         >
@@ -57,7 +58,7 @@
       <aside>
         <span class="to be labelled red"><b>React.js</b></span> and
         <span class="to be labelled red"><b>SpringBoot</b> </span>used for
-        frontend and backend.<br />
+        frontend and backend.<br>
         <code>"render()"</code>
         <pre>
             .   ____          _            __ _ _
@@ -70,20 +71,20 @@
       </aside>
     </main>
 
-    <hr />
+    <hr>
 
 
     <nav>
-      <h1>About Shang</h1><br><br>
+      <h2>About Shang</h2><br><br>
       <ul>
         <!-- I will add LOTS of space here! -->
-        <li><a href="Shang Liu Resume .pdf"><b>My resume</b></a><br><br><br><br><br><br><br></li>
+        <li><a href="ShangLiuResume.pdf"><b>My resume</b></a><br><br><br><br><br><br><br></li>
         <li><b>About me</b>
             <p>Adaptable student with knowledge OOD, algorithms, data structure, and system designs. My first and primary coding language is Java and I am also familiar with C, C++, and ARM assembly. I am currently junior student looking to join the workforce to gain real-world experience. Ability to complete tasks on time in both individual and team settings with satisfactory quality. Dependable and responsible, learns fast, and is ready to grow with your company!</p>
         </li>
-        <li><caption><b>Previous working experience</b></caption> <br><br>
+        <li> <b>Previous working experience</b><br><br>
             <table>
-
+              <caption>Experience</caption>
                 <colgroup>
                     <col span="3" style="background-color:yellowgreen">
                   </colgroup>
@@ -108,27 +109,28 @@
       <br><br><br>
     </nav>
 
-    <hr />
+    <hr>
 
     <footer id="footer">
-      <em><b>Shang</b> the SWE to be!</em><br />
+      
 
       <section>
+        <h6><em><b>Shang</b> the SWE to be!</em><br></h6>
       <details>
         <summary>Education</summary>
-       University of California, San Diego <br /> Expected Graduation: June 2024
+       University of California, San Diego<br> Expected Graduation: June 2024
       </details>
 
       <details>
         <summary>Contact</summary>
-        Email: shl066@ucsd.edu <br /> Phone:(858)-539-6141
+        Email: shl066@ucsd.edu <br> Phone:(858)-539-6141
         </details>
         </section>
     
-    <br />
+    <br>
 
 
-      <section>Nice to meet you again!</section>
+      <section><h5>Nice to meet you again!</h5></section>
       <!-- add clickble social logos that connects to my page -->
       <a href="https://www.instagram.com/eastwind1071/">To my instagram page</a>
     </footer>
@@ -136,8 +138,8 @@
 
 
     <!-- This is the expereiment section of this webpage, I personally don't find these tags actually fit for a personal resume site.-->
-    <br/>
-    <hr/>
+    <br>
+    <hr>
     <h1>EXPERIMENT SECTION BELOW </h1>
 
 
@@ -161,13 +163,14 @@
         </li>
         <li>This is the video about our program! (FAKE, actually some random mp4).<br>
             <video width="300" height="300" controls>
-            <source src="sun.mp4" type="video/mp4">
-        <p>If you are reading this, it is because this browser does not support the video element.</p>
+            <source src="sun.mp4" type="video/mp4">   
+        <p>If you are reading this, it is because this browser does not support the video element.</p></video>
+
         <li>This doesn't load because it is a canvas with a circle that looking like the loading circle <br>
-        
-            <!-- I will use some minor js to draw a circle on this purly pixal canvas that looks like a picture that is loading... lol -->
-        <canvas id = "c" height = "100" width = "100"
-        style = "border:1px solid"></canvas>
+                    <!-- I will use some minor js to draw a circle on this purly pixal canvas that looks like a picture that is loading... lol -->
+                    <canvas id = "c" height = "100" width = "100"
+                    style = "border:1px solid"></canvas></li>
+      
      
     <script>
         var c = document.getElementById("c");
@@ -177,16 +180,15 @@
         shape.stroke();
     </script>
 
-        </li>
-    </video>
-</li>
+
+
     </ol>
-    <form action="" method="get">
+    <form action="https://www.google.com/" method="get">
         <fieldset>
             <legend>Interested in the courses I am currently taking?</legend>
         
         <figure>
-            <img src="avatar.png", width="50" height="50" >
+            <img src="avatar.png" width="50" height="50" alt="avatar-alien" >
             <figcaption>This's me!</figcaption>
         </figure>
             
@@ -225,8 +227,8 @@
         </textarea><br><br>
         <button type="reset">Reset All</button>
         <input type="submit" value="Submit! I will contact you and try tell you more!">
+      </fieldset>
       </form>
-    </fieldset>
 
 
 
